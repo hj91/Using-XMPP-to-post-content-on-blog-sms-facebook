@@ -1,0 +1,24 @@
+Author       - Harshad Joshi
+Email        - firewalrus@gmail.com
+Twitter      - @hj91  
+Date         - 10 June 2010
+
+Requirements - Wordpress blog with xml-rpc publishing enabled.
+             - XMPP chat server (openfire)
+             - Python 2.5 with xmpp and xml-rpc library.
+
+Features     - Unicode enabled
+
+This programs runs on a localhost xmpp server and logs all the messages sent to it on wordpress blog.
+Its a sort of federated microblogging with a database backend. Useful for storming sessions.
+
+
+ToDo         - Bot gets kicked off after being idle for 5 or 6 minutes on openfire server. Works well on gtalk server 
+             - Needs to send 'KeepALive' packet.
+             - After getting logged in, it posts 'None' as the first message. Need to remove it.
+	     
+ 	     - Add some more scalability to the bot, ie instead of hardcoding the blog/user/passwd within the program, 
+             - should ask for it once and store it in the backend.
+
+
+Similar Project - http://sourceforge.net/projects/djangolive/
