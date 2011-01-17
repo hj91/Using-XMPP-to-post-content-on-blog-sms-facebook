@@ -4,6 +4,9 @@
 # Please add your countries facebook mobile number on line 74. This current mobile number is meant for facebook india only.
 # Author       - Harshad Joshi
 # Date         - 2 January 2011
+# Email        - firewalrus [at] gmail.com
+# Twitter      - http:/twitter.com/hj91
+# Contact      - +918793104865
 #
 # Requirements - Wordpress blog with xml-rpc publishing enabled.
 #	       - XMPP chat server (openfire)
