@@ -5,22 +5,22 @@
 # Author       - Harshad Joshi
 # Date         - 2 January 2011
 # Email        - firewalrus [at] gmail.com
-# Twitter      - http:/twitter.com/hj91
+# Twitter      - http://twitter.com/hj91
 # Contact      - +918793104865
 #
-# Requirements - Wordpress blog with xml-rpc publishing enabled.
-#	       - XMPP chat server (openfire)
-#              - Python 2.5 with xmpp and xml-rpc library.
-#              - Gammu 1.27.0 mobile communication library      
+# Requirements  - Wordpress blog with xml-rpc publishing enabled.
+#	        - XMPP chat server (openfire)
+#               - Python 2.5 with xmpp and xml-rpc library.
+#               - Gammu 1.27.0 mobile communication library      
 #
-# Features     - Unicode enabled
+# Features      - Unicode enabled
 #
-# ToDo         - Bot gets kicked off after being idle for 5 or 6 minutes. 
-#              - Needs to send 'KeepALive' packet.
-#              - After getting logged in, it posts 'None' as the first message. Need to remove it.
-#	       - Dosent work with gtalk. i dont know the reason.
-# 	       - Add some more scalability to the bot, ie instead of hardcoding the blog/user/passwd within the program, 
-#              - should ask for it once and store it in the backend.
+# ToDo          - Bot gets kicked off after being idle for 5 or 6 minutes. 
+#               - Needs to send 'KeepALive' packet.
+#               - After getting logged in, it posts 'None' as the first message. Need to remove it.
+#	        - Dosent work with gtalk. i dont know the reason.
+# 	        - Add some more scalability to the bot, ie instead of hardcoding the blog/user/passwd within the        program, 
+#               - should ask for it once and store it in the backend.
 
 
 blog_name = 'yourblognameatwordpress/xmlrpc.php'
