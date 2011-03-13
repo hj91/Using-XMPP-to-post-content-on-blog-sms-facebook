@@ -7,6 +7,7 @@
 # Features     - Unicode enabled
 #
 # ToDo         - Add a GUI maybe, and write more good code
+# Thanks to  - Patrick Archibald..greet him at http://twitter.com/pla1
 
 
 import xmpp
