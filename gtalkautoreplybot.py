@@ -7,7 +7,7 @@
 # Features     - Unicode enabled
 #
 # ToDo         - Add a GUI maybe, and write more good code
-# Thanks to  - Patrick Archibald..greet him at http://twitter.com/pla1
+# Contains some code from  - Patrick Archibald..http://b.patrickarchibald.com/2010/06/17/email-notification-of-twitter-mentions/
 
 
 import xmpp
