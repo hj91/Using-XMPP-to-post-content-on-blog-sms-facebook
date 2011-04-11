@@ -27,6 +27,7 @@ for ri in sms:
 print "\n"+g
 h = g.split()
 
+#break the sms into chunks and check for username, passwd and number of mails to receive..ideally this fragment should have some exception handling.  - HJ
 if (h[0].lower() == 'check' or h[0] == 'Check'):
 		
 
