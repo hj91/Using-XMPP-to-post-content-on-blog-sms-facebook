@@ -38,10 +38,10 @@ for ri in sms:
 	f=ri['Number']
 	print g
 
-print "\n"+g
+print "\n"+g #for debugging purpose only..this shows the username, passwd etc..dont use to snoop on others sensitive data
 h = g.split()
 
-#break the sms into chunks and check for username, passwd and number of mails to receive..ideally this fragment should have some exception handling.  - HJ
+#break the sms into chunks and check for username, passwd and number of mails to receive..ideally this fragment should have some exception handling.  note that if statement contains redundant conditions, i could have written better code - HJ
 if (h[0].lower() == 'check' or h[0] == 'Check'):
 		
 
