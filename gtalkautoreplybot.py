@@ -7,10 +7,7 @@
 # Features     - Unicode enabled
 #
 # ToDo         - Add a GUI maybe, and write more good code
-<<<<<<< HEAD:gtalkautoreplybot.py
-=======
 # Contains some code from  - Patrick Archibald..http://b.patrickarchibald.com/2010/06/17/email-notification-of-twitter-mentions/
->>>>>>> slave1:gtalkautoreplybot.py
 
 
 import xmpp
