@@ -29,3 +29,10 @@ ToDo
 Affiliated Project  
 - http://sourceforge.net/projects/djangolive/
 - http://code.google.com/p/indiaforcekernel/
+
+Files included in this repository 
+- README
+- gtalkautoreplybot.py    
+- send_sms_to_get_gmail.py  
+- xmpp_to_facebook_sms_and_wordpress.py  
+- xmpp_to_wordpress.py
