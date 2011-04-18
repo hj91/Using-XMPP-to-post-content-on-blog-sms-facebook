@@ -73,6 +73,9 @@ class WP:
 	result=connection.auth(jid.getNode(),passwd)
 	connection.RegisterHandler('message',message_handler,"")
 	connection.sendInitPresence()
+        presence = xmpp.Presence()
+        presence.setStatus("Hi...just send me a message and I will post it on http://moiblogging.wordpress.com")
+        connection.send(presence)
 
 	while (1):
 		connection.Process(1)
