@@ -41,10 +41,8 @@ user='user@gmail.com'
 passwd='password'
 server='gmail.com'
 
-#title is not needed for P2 theme. for the rest of themes, date title dosent change. ToDo it.
 
 
-blog_id = 0
 
 class Bot:
 	def message_handler(connect_object,message_node):
