@@ -36,3 +36,4 @@ Files included in this repository
 - send_sms_to_get_gmail.py  
 - xmpp_to_facebook_sms_and_wordpress.py  
 - xmpp_to_wordpress.py
+- xmpp_to_posterous.py 
