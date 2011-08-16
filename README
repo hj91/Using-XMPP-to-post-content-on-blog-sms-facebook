@@ -24,6 +24,7 @@ ToDo
 - After getting logged in, it posts 'None' as the first message. Need to remove it.
 - Add some more scalability to the bot, ie instead of hardcoding the blog/user/passwd within the program, 
    should ask for it once and store it in the backend.
+- Needs some mysql or postgresql backend to check for user registration..
 
 
 Affiliated Project  
