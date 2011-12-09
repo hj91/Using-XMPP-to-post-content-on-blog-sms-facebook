@@ -26,6 +26,14 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 # 02110-1301, USA.
 
+	
+
+__author__ = "Harshad Joshi <firewalrus@gmail.com>"
+
+version = 0.25
+
+Description=''' This is xmpp to posterous bots main class.'''
+
 import sys
 
 import time
