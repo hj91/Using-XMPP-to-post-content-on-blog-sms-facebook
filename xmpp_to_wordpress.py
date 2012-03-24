@@ -34,7 +34,7 @@ draft = 0
 
 
 import sys
-
+import pynotify
 import time
 import datetime
 import xml.sax.saxutils
@@ -58,7 +58,12 @@ class WP:
 		command1=str(unicode(message_node.getBody()).encode('utf-8'))
 		command2=str(message_node.getFrom().getStripped())
 		c3=command2.replace("@"," [at] ")
-		c4=c3.replace("."," [dot] ")		
+		c4=c3.replace("."," [dot] ")
+		if not pynotify.init("Test Notification"):
+			sys.exit(1)
+		n = pynotify.Notification("Got this message", command1+ ">>" + command2)
+		if not n.show():
+			print "Failed to send notification"
 		#datetitle = datetime.datetime.now()		
 		#title = "From xmpp client >> "+command2
 		title = "What I typed today from IM client >>> "+c4+" " #+str(datetitle)
