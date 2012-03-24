@@ -2,6 +2,8 @@
 # Its a sort of federated microblogging with a database backend. Useful for storming sessions.
 # Author       - Harshad Joshi
 # Date         - 10 June 2010
+# Updates      - 24 March 2012
+# Please check the commit data for more details.
 #
 # Requirements - Wordpress blog with xml-rpc publishing enabled.
 #	       - XMPP chat server (openfire)
