@@ -50,6 +50,9 @@ e=datetime.datetime.now()
 
 #title is not needed for P2 theme. for the rest of themes, date title dosent change. ToDo it.
 
+PROXY={}
+#PROXY={'host':'192.168.0.1','port':3128,'username':'luchs','password':'secret'}
+
 
 blog_id = 0
 
@@ -80,6 +83,7 @@ class WP:
 	jid=xmpp.JID(user)
 	connection=xmpp.Client(server)
 	connection.connect()
+	#connection.connect(proxy=PROXY)
 	result=connection.auth(jid.getNode(),passwd)
 	connection.RegisterHandler('message',message_handler,"")
 	connection.sendInitPresence()
