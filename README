@@ -7,7 +7,8 @@ Requirements
 - Wordpress blog with xml-rpc publishing enabled.
 - XMPP chat server (openfire)
 - Python 2.5 with xmpp and xml-rpc library.
-- Gammu SMS library version 1.27.0
+- Gammu SMS library version 1.27.
+- PyNotify to get updates on desktop (Linux only).
 
 Features     
 - Unicode enabled

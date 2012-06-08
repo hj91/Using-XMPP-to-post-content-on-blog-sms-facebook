@@ -15,7 +15,7 @@ class WP:
 		self.simulation = 0
 	
 	def post(self,a,title):
-	'''Contains XML-RPC procedures'''
+		'''Contains XML-RPC procedures'''
 		self.a= a # raw_input (" Enter a blog post >> ")
 		self.title = title #"Sent via IM client "#>>> "+c4+" " #+str(datetitle)
 		blog_content = { 'title' : str(self.title), 'description' : self.a+"\n" }
