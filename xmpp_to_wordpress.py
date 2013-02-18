@@ -3,6 +3,7 @@
 # Author       - Harshad Joshi
 # Date         - 10 June 2010
 # Updates      - 24 March 2012
+#	       - 18 Feb 2013
 # Please check the commit data for more details.
 #
 # Requirements - Wordpress blog with xml-rpc publishing enabled.
@@ -59,6 +60,14 @@ PROXY={}
 blog_id = 0
 
 class WP:
+	#this snippet handles presence and subscription...automatically subscribes to user who request subscription. Not recommended for public use.
+	def presence_handler(connection_object, message_node):
+		prstype=message_node.getType()
+		who=message_node.getFrom()
+		if prstype == "subscribe":
+			connection_object.send (xmpp.Presence(to=who,typ = 'subscribed'))
+			connection_object.send (xmpp.Presence(to=who,typ = 'subscribe'))
+
 	def message_handler(connect_object,message_node):
 		command1=str(unicode(message_node.getBody()).encode('utf-8'))
 		command2=str(message_node.getFrom().getStripped())
@@ -93,6 +102,7 @@ class WP:
 	#connection.connect(proxy=PROXY)
 	result=connection.auth(jid.getNode(),passwd)
 	connection.RegisterHandler('message',message_handler,"")
+	connection.RegisterHandler('presence',presence_handler,"")
 	connection.sendInitPresence()
         presence = xmpp.Presence()
         presence.setStatus("Hi...just send me a message and I will post it on http://moiblogging.wordpress.com")
